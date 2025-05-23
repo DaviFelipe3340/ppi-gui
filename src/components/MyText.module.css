@@ -8,7 +8,7 @@
 }
 
 .div {
-  background-color: var(--primary-dark);
+  background-color: var(--prussian-blue-2);
   color: var(--primary-contrast);
   box-shadow: 0 0 1rem var(--gray-500);
   padding: 3rem;
