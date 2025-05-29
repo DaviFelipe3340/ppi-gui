@@ -1,5 +1,17 @@
 .container{
     height: 100vh;
     display: flex;
-    flex-direction : row;
+    flex-direction : row; /* Sets the main axis to horizontal */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 5rem; /* Adds space between items */
+
+
+/*alinhamento no eixo horizontal*/
+justify-content: center; /* Centers items horizontally */
+
+/*alinhamento no eixo vertical*/
+align-items: center; /* Centers items vertically */
+
+align-content: center; /* Centers the wrapped lines vertically */
+
 }

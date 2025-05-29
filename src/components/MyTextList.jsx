@@ -7,6 +7,8 @@ export function MyTextList() {
     { title: "Meu titulo", text: "meu texto" },
     { title: "Meu titulo", text: "meu texto" },
     { title: "Meu titulo", text: "meu texto" },
+    { title: "Meu titulo", text: "meu texto" },
+    { title: "Meu titulo", text: "meu texto" },
   ];
 
   return (
