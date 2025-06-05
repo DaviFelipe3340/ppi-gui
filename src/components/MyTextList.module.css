@@ -1,17 +1,36 @@
-.container{
-    height: 100vh;
-    display: flex;
-    flex-direction : row; /* Sets the main axis to horizontal */
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 5rem; /* Adds space between items */
+.container {
+  height: max-content;
+  display: flex;
+  flex-direction: row; /* Sets the main axis to horizontal */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 5rem; /* Adds space between items */
 
+  /*alinhamento no eixo horizontal*/
+  justify-content: center; /* Centers items horizontally */
 
-/*alinhamento no eixo horizontal*/
-justify-content: center; /* Centers items horizontally */
+  /*alinhamento no eixo vertical*/
+  align-items: center; /* Centers items vertically */
 
-/*alinhamento no eixo vertical*/
-align-items: center; /* Centers items vertically */
+  align-content: center; /* Centers the wrapped lines vertically */
 
-align-content: center; /* Centers the wrapped lines vertically */
+  @media (max-width: 768px) {
+    flex-flow: column nowrap; /* Stacks items vertically on smaller screens */
+    height: auto; /* Adjusts height for smaller screens */
+  }
+}
 
+.title {
+  margin-top: 2rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  transition: .3s;
+
+  @media (min-width: 768px) and (max-width: 1020px) {
+    font-size: 6rem; /* Further adjusts title size for very small screens */
+
+    @media (max-width: 768px) {
+      font-size: 4rem; /* Adjusts title size for smaller screens */
+    }
+  }
 }
