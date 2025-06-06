@@ -5,7 +5,7 @@ export function MyGrid() {
     <div className={styles.container}>
       <header className={styles.header1} />
       <header className={styles.header2} />
-      <aside className={styles.aside} />
+      <aside className={styles.aside1} />
       <main className={styles.main}>
         <div className={styles.card}>
           <h2> card 1 </h2>
@@ -33,7 +33,9 @@ export function MyGrid() {
        
         </div>
       </main>
-      <footer className={styles.footer} />
+      <aside className={styles.aside2} />
+      <footer className={styles.footer1} />
+      <footer className={styles.footer2} />
     </div>
   );
 }
